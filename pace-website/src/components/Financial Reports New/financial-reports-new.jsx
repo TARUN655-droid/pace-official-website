@@ -6,15 +6,15 @@ import investorData from "@/json/investorRelationsData.json";
 import EyeIcon from "@/components/svgs/EyeIcon";
 import DownloadIcon from "@/components/svgs/DownloadIcon";
 
-const YEARS = ["FY 2025-26", "FY 2024-25", "FY 2023-24", "FY 2022-23"];
+const YEARS = ["FY 2026-27", "FY 2025-26", "FY 2024-25", "FY 2023-24", "FY 2022-23"];
 
 export default function FinancialReportsNew() {
   const [selectedYear, setSelectedYear] = useState("FY 2025-26");
-  const [selectedCategory, setSelectedCategory] = useState("Announcement Under Regulation 30");
+  const [selectedCategory, setSelectedCategory] = useState("Announcements");
   const [selectedSubcategory, setSelectedSubcategory] = useState("Company Policies");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [expandedAccordions, setExpandedAccordions] = useState({
-    "Announcement Under Regulation 30": true,
+    Announcements: true,
   });
 
   const handleCategoryClick = (cat) => {
